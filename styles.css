@@ -1,0 +1,13 @@
+textarea{
+    display: block;
+    margin: 3rem 0rem;
+    width: 457px; 
+    height: 163px;
+}
+
+div{
+    border: solid thin black;
+    width: 457px; 
+    height: 163px;
+    margin: 3rem 0rem;
+}
