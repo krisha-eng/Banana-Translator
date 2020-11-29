@@ -8,11 +8,14 @@ btn.addEventListener("click", clickHandler);
 
 function clickHandler(){
     var input = txt1.value;
-    console.log(input);
-    div.innerText = input;
+    // console.log(input);
+    fetch("https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json" + "?" + "text=" + input).then(response => response.json()).then(data =>  div.innerText = data.contents.text);
 }
 
 
+// fetch("https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json?text=23145").then(response => response.json()).then(data => console.log(data.contents.text))
+
+// fetch("https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json?text=23145").then(Response => console.log(Response.json()))
 
 
 
