@@ -9,7 +9,7 @@ btn.addEventListener("click", clickHandler);
 function clickHandler(){
     var input = txt1.value;
     // console.log(input);
-    fetch("https://api.funtranslations.com/translate/minion.json" + "?" + "text=" + input).then(response => response.json()).then(data =>  div.innerText = data.contents.translated);
+    fetch("https://api.funtranslations.com/translate/minion.json" + "?" + "text=" + input).then(response => response.json()).then(data =>  div.innerText = data.contents.translated).catch(err => alert(err +"occured please try after some time"));
 }
 
 
